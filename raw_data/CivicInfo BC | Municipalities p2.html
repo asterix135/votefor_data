@@ -1,0 +1,621 @@
+
+
+
+<!doctype html>
+
+<!--[if lt IE 8]><html class="ie-obsolete no-js" lang="en"><![endif]-->
+<!--[if IE 8]><html class="ie8 no-js" lang="en"><![endif]-->
+<!--[if IE 9]><html class="ie9 no-js" lang="en"><![endif]-->
+<!--[if gt IE 9]><!--><html lang="en" class="no-js"><!--<![endif]-->
+
+
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta charset="UTF-8">
+  
+  	
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<link rel="stylesheet" href="./infograph/css/infograph.css">
+<link rel="stylesheet" href="./plugins/font-awesome-4.6.3/css/font-awesome.min.css">
+
+
+  <title>CivicInfo BC | Municipalities </title>
+  
+<link rel="apple-touch-icon" sizes="57x57" href="production/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="production/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="production/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="production/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="production/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="production/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="production/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="production/apple-touch-icon-152x152.png">
+<link rel="icon" type="image/png" href="production/favicon-196x196.png" sizes="196x196">
+<link rel="icon" type="image/png" href="production/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="production/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="production/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="production/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="production/mstile-144x144.png">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="http://www.civicinfo.bc.ca/rss/news.php" rel="alternate" type="application/rss+xml" title="CivicInfo BC | RSS: Latest News">
+<link href="http://www.civicinfo.bc.ca/rss/careers.php" rel="alternate" type="application/rss+xml" title="CivicInfo BC | RSS: Latest Jobs">
+<link href="http://www.civicinfo.bc.ca/rss/events.php" rel="alternate" type="application/rss+xml" title="CivicInfo BC | RSS: Latest Events" >
+<link href="http://www.civicinfo.bc.ca/rss/bids.php" rel="alternate" type="application/rss+xml" title="CivicInfo BC | RSS: Latest Bids and Tenders">
+
+
+
+<script type="text/javascript" src="jslib/main.php"></script>
+<script type="text/javascript" src="SendToAFriend/sendtoafriend.js"></script>
+<script type="text/javascript" src="SendToAFriend/socialmedia.js"></script>
+<script type="text/javascript" src="https://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
+<script type="text/javascript">var sendtoafriend=new CivicInfoBC.SendToAFriend('6LfB5PUSAAAAAGPtyMhGL5NFHtkWyhlo5au3z5F9');</script>
+<link rel="stylesheet" type="text/css" href="SendToAFriend/sendtoafriend.css" />
+<link rel="stylesheet" type="text/css" href="SendToAFriend/socialmedia.css" />
+
+<!--[if gt IE 7]><!-->
+<script src="production/js/jquery.min.js"></script>
+<script src="production/js/plugins.js"></script>
+<script src="production/js/scripts.js"></script>
+<!--<![endif]-->
+
+
+
+<script src="production/js/civicinfo.js"></script>
+
+<style type="text/css">
+
+	#watermark {
+  	color: #d0d0d0;
+  	font-size: 200pt;
+  	-webkit-transform: rotate(-45deg);
+  	-moz-transform: rotate(-45deg);
+  	position: absolute;
+  	width: 100%;
+  	height: 100%;
+  	margin: 0;
+  	z-index: -1;
+  	left:-100px;
+  	top:-200px;
+	}
+
+
+
+   /* This CSS is used for the Show/Hide functionality. */
+   .more {
+      display: none;
+      border-bottom: 1px solid #B1B1B1; 
+	  margin-bottom: 5px;
+	}
+   	  a.showLink, a.hideLink {
+      text-decoration: none;
+	  padding-left: 8px;
+      background: transparent url(production/images/down.gif) no-repeat left; }
+	  
+   a.hideLink {
+      background: transparent url(production/images/up.gif) no-repeat left; }
+  
+</style>
+
+
+<!--[if lt IE 9]>
+  <script src="production/js/html5shiv-printshiv.min.js"></script>
+<![endif]
+
+<!--[if gt IE 8]><!-->
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,700,300" rel="stylesheet" type="text/css">
+  
+             <link rel="stylesheet" href="production/css/standard.css" media="screen">
+           
+          
+<!--<![endif]-->
+
+<!--[if IE 8]>
+
+            <link rel="stylesheet" href="production/css/oldie.css">
+           <!--<link rel="stylesheet" href="production/css/standard.css" media="screen">-->
+           
+          
+
+  
+<![endif]-->
+
+<!--[if lt IE 8]>
+  <link rel="stylesheet" href="production/css/obsoleteie.css" media="screen">
+
+<![endif]-->
+
+<link rel="stylesheet" href="production/css/full/print.css" media="print">
+
+<!--[if IE 8]>
+  <script src="production/js/respond.min.js"></script>
+   <link rel="stylesheet" href="production/css/full/printie8.css" media="print">
+<![endif]-->
+
+<meta name="google-translate-customization" content="55096ad7a163407e-525435123adcc0a3-g44768e8dcad5c16c-11"></meta><link rel="stylesheet" href="./infograph/css/infograph.css">
+
+	</head>
+	<body>
+	<div class="top" id="top">
+
+<header class="header" id="header"><div class="container"><div class="row">
+  <ul class="skiplinks" id="skiplinks">
+    <li><a href="#content" class="skiplink">Skip to content</a></li>
+  </ul> <!-- close #skiplinks -->
+
+  <div class="brand" id="brand" role="banner">
+    <a href="/" title="Home" class="brand-link">
+      <h2 class="brand-heading">CivicInfo BC</h2>
+      <img src="https://www.civicinfo.bc.ca/production/images/logo-civicinfo.png" width="228" height="32" alt="CivicInfo BC logo" class="brand-logo">
+    </a>
+  </div> <!-- close #brand -->
+
+  <nav class="utility_nav" id="utility_nav" role="navigation">
+    <h2 class="utility_nav-heading">Utility Navigation</h2>
+    <ul class="utility_nav-menu">
+      <li class="utility_nav-menu-item"><a href="http://www.civicinfo.bc.ca/about-us">About</a></li>
+      <!--<li class="utility_nav-menu-item"><a href="faqs">FAQs</a></li>-->
+      <li class="utility_nav-menu-item"><a href="http://www.civicinfo.bc.ca/contact-us">Contact</a></li>
+    </ul>
+
+  </nav> <!-- close #utility_nav -->
+
+  <div class="controls" id="controls">
+    
+  
+  
+    <div class="social_links share_links control" id="share_links">
+      <h2 class="share_links-heading controls-heading" id="share_links-heading">Share</h2>
+      <ul class="share_links-container controls-container closed" id="share_links-container">
+      
+      	<li class="share_links-item"><a href="#" class="print control-link icon-link" title="Print Page" onclick='window.print();'><span class="share_links-pre">Print Page</span></a></li>
+        
+        <li class="share_links-item"><a href="#" class="email control-link icon-link" title="Email to a Friend" onclick='sendtoafriend.Show();'><span class="share_links-pre">Email to a Friend</span></a></li>
+        
+        <li class="share_links-item"><a href="https://twitter.com/share?url=https://www.civicinfo.bc.ca/municipalities?pn=2" class="twitter control-link icon-link" target="_blank" title="Share on Twitter"><span class="share_links-pre">Share on </span>Twitter</a></li>
+        
+        <li class="share_links-item"><a href="https://www.facebook.com/sharer.php?u=https://www.civicinfo.bc.ca/municipalities?pn=2&t=CivicInfo BC | Municipalities" class="facebook control-link icon-link" target="_blank" title="Share on Facebook"><span class="share_links-pre">Share on </span>Facebook</a></li>
+       
+        <li class="share_links-item"><a href="https://linkedin.com/shareArticle?mini=true&url=https://www.civicinfo.bc.ca/municipalities?pn=2" class="linkedin control-link icon-link" target="_blank" title="LinkedIn"><span class="share_links-pre">LinkedIn</span></a></li>
+        
+        
+        <!--<a id='email_share' class='share_button' onclick='sendtoafriend.Show();' href='#' alt='Email' title='Email'></a>-->
+        
+      </ul>
+    </div>
+    <div class="settings" id="settings">
+      <h2 class="settings-heading controls-heading" id="settings-heading">Settings</h2>
+      <div class="settings-container controls-container closed" id="settings-container">
+
+      <div class="visibility control settings-item" id="visibility">
+        <h3 class="visibility-heading">Adjust Visibility</h3>
+        <ul class="visibility-container" id="visibility-container">
+                   <li><a href="https://www.civicinfo.bc.ca/municipalities?contrast=ON&pn=2" class="view_switch view_contrast control-link text-link">Show High Contrast view</a></li>
+       
+                
+        
+        </ul>
+      </div>
+    </div></div>
+  </div> <!-- close #controls -->
+  
+  <div class="search" id="search">
+  
+  	<!--<form name="advancedForm" id="cse-search-box" method="GET" action="http://www.new.civicinfo.bc.ca/search">
+      <h2 class="search-heading"><label for="search-query">Search Our Site</label></h2>
+      <p>
+      	<input type="hidden" name="cx" value="004358636584211606110:b-pb9dhgxyc" />
+      	<input type="hidden" name="cof" value="FORID:10" />
+      	<input type="hidden" name="ie" value="UTF-8" />
+      	<input type="text" id="q" name="q" class="form_control" max="100" required>
+      	<input type="submit" name="search-submit" id="search-submit" class="search-submit" value="Search" />
+      </p>
+   	</form>
+  -->
+
+  	
+    <form action="/search" role="search" class="search-form" id="search-form" method="post">
+      <h2 class="search-heading"><label for="search-query">Search Our Site</label></h2>
+      <p><input type="text" name="search-query" class="search-query" id="search-query" required="required" > 
+       <input type="submit" name="search-submit" id="search-submit" class="search-submit" value="Search" /></p>
+    </form>
+    
+    
+  </div> <!-- close #search -->
+
+
+</div></div>
+
+ <nav class="nav" id="nav" role="navigation">
+    <ul class="nav-menu" id="nav-menu">
+      <li class="nav-item"><a href="/news">News</a>
+        <div class="sub_nav">
+          <ul class="sub_nav-group">
+            <li><a href="news">Current News Releases</a></li>
+			<li><a href="news-submit">Submit a News Story</a></li>
+			<li><a href="news-archive">Archive</a></li>
+			
+			
+			
+          </ul>
+          <ul class="sub_nav-group">
+		    <li><a href="news-twitter">@BCHeadlines on Twitter</a></li>
+		    <li><a href="newsletter-purchase">Purchase a Newsletter Ad</a></li>
+			<li><a href="rss/news.php" target="blank">News Release Feed - RSS</a></li>
+
+          </ul>
+        </div>
+      </li>
+	  
+      <li class="nav-item"><a href="/events">Events &amp; Training</a>
+        <div class="sub_nav">
+          <ul class="sub_nav-group">
+            <li><a href="events">Upcoming Events</a></li>
+			<li><a href="events-post">List an Event</a></li>
+			<li><a href="events-rss">Upcoming Events Feed - RSS</a></li>
+			
+          </ul>
+          <ul class="sub_nav-group">
+		    <li><a href="events-register">Register for an Event</a></li>
+			<li><a href="events-regservices">Order Registration Services</a></li>
+            <!--<li><a href="events-books-and-manuals">Order Books and Manuals</a></li>-->
+			
+          </ul>
+        </div>
+      </li>
+	  
+      <li class="nav-item"><a href="/directories">Directories</a>
+        <div class="sub_nav">
+          <ul class="sub_nav-group">
+            <li><a href="municipalities">Municipalities</a></li>
+            <li><a href="regionaldistricts">Regional Districts &amp; Islands Trust</a></li>
+            <li><a href="firstnations">First Nations</a></li>
+			<li><a href="improvementdistricts">Improvement Districts</a></li>
+			
+          </ul>
+          <ul class="sub_nav-group">
+		    
+            <!--<li><a href="schooldistricts">School Districts</a></li>-->
+            <li><a href="agencies">Agencies and Associations</a></li>
+			<li><a href="suppliers">Suppliers</a></li>
+			<li><a href="people">People</a></li>
+			<li><a href="lists-purchase">Purchase Lists (Non-Commercial Use)</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item"><a href="/researchtools">Research Tools</a>
+        <div class="sub_nav">
+          <ul class="sub_nav-group">
+            <li><a href="surveys.asp">Annual Surveys</a></li>
+            <li><a href="forums">Discussion Forums</a></li>
+			<li><a href="documents">Documents</a></li>
+			<li><a href="/election">Election Results</a></li>
+            
+			
+			
+          </ul>
+          <ul class="sub_nav-group">
+		  	
+            <li><a href="/grants">Grants Database</a></li>
+			<li><a href="legcalendar">Legislative Calendar</a></li>
+            <!--<li><a href="opendatacatalogue">Open Data Catalogue</a></li>-->
+			<li><a href="practices-innovations">Practices &amp; Innovations</a></li>
+			<!--<li><a href="featuredresources">Featured Resources</a></li>-->
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item"><a href="/careers">Careers</a>
+        <div class="sub_nav">
+          <ul class="sub_nav-group">
+            <li><a href="careers">Current Postings</a></li>
+			<li><a href="careers-post">Post a Job</a></li>
+          </ul>
+         <ul class="sub_nav-group">
+		  <li><a href="careers-archive-2015">Archive</a></li>
+     	  <li><a href="careers-rss">Job Posting Feeds - RSS</a></li>
+          </ul>
+        </div>
+      </li>
+	  
+	  
+
+
+	  
+      <li class="nav-item"><a href="/bids">Bids &amp; Tenders</a>
+        <div class="sub_nav">
+          <ul class="sub_nav-group">
+            <li><a href="bids">Current Opportunities</a></li>
+			<li><a href="bids-post">Post an Opportunity</a></li>
+			
+          </ul>
+         <ul class="sub_nav-group">
+		 	<li><a href="bids-archive">Archive</a></li>
+		 	<li><a href="bids-rss">Bid & Tender Feeds - RSS</a></li>
+
+          </ul>
+        </div>
+      </li>
+	  
+
+	  
+      <li class="nav-item"><a href="/marketplace">Marketplace</a>
+        <div class="sub_nav">
+          <ul class="sub_nav-group">
+            <li><a href="marketplace-news">News Services</a></li>
+            <li><a href="marketplace-event">Event Services</a></li>
+            <li><a href="marketplace-directory">Directory Services</a></li>
+			<li><a href="marketplace-research">Research Services</a></li>
+          </ul>
+          <ul class="sub_nav-group">
+		  
+            <li><a href="marketplace-career">Career Posting Services</a></li>
+            <li><a href="marketplace-bid">Bid Posting Services</a></li>
+			<li><a href="events-books-and-manuals">Order Books and Manuals</a></li>
+            
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </nav> <!-- close #nav -->
+</header>
+<div class="main_wrapper" id="main_wrapper"><div class="container"><div class="row">
+
+  <div class="content_wrapper" id="content_wrapper">
+    <nav class="breadcrumbs" id="breadcrumbs">
+      <h2 class="breadcrumbs-heading">Breadcrumbs</h2>
+      <p class="breadcrumbs-menu">
+        <span class="breadcrumbs-title">You are here: </span>
+        <a href="/">Home</a>
+        
+          <span class="breadcrumbs-separator"> / </span>
+        <a href="directories">Directories</a>
+        
+        <span class="breadcrumbs-separator"> / </span>
+        <a href="municipalities">Municipalities</a>
+        
+                
+        
+      </p>
+    </nav>
+
+    <main class="content" id="content" role="main">
+	    <h1 class="content-heading" id="content-heading">Municipalities </h1>
+    
+          <div align="right"><a href="#" id="advancedsearch-show" class="showLink" onClick="showHide('advancedsearch');return false;">Advanced Search</a></div>  
+           
+      <div id="advancedsearch" class="more">
+         
+         <form name="advancedForm" id="advancedForm" method="GET" action="">
+         
+         	<div class="form_control-group">
+               <input type="text" id="stext" name="stext" class="form_control" max="100" placeholder="Enter name of  Municipality (optional)" value="">
+               <input type="hidden" id="type" name="type" class="form_control" max="2" value="ss">
+            </div>
+            
+             <div class="form_control-group">
+              <select id="region" name="region" class="form_control"><option value=" ">Select Geographic Region...</option><option value="7" >East Kootenay / Rocky Mountain</option><option value="9" >Lower Mainland</option><option value="10" >North and Central Vancouver Island / Sunshine Coast</option><option value="1" >North Central / Cariboo</option><option value="3" >North Coast</option><option value="4" >Okanagan Valley / Similkameen</option><option value="2" >Peace River</option><option value="11" >South Vancouver Island</option><option value="5" >Thompson / Shuswap / Columbia</option><option value="6" >West Kootenay / Boundary</option></select>            </div>
+                   
+             <div class="form_control-group">
+              <select id="rd" name="rd" class="form_control"><option value=" ">Select Regional District...</option><option value="21" >Alberni-Clayoquot</option><option value="19" >Bulkley-Nechako</option><option value="1" >Capital</option><option value="17" >Cariboo</option><option value="10" >Central Coast</option><option value="25" >Central Kootenay</option><option value="15" >Central Okanagan</option><option value="13" >Columbia-Shuswap</option><option value="28" >Comox Valley</option><option value="6" >Cowichan Valley</option><option value="26" >East Kootenay</option><option value="3" >Fraser Valley</option><option value="18" >Fraser-Fort George</option><option value="20" >Kitimat-Stikine</option><option value="24" >Kootenay Boundary</option><option value="30" >Metro Vancouver</option><option value="9" >Mount Waddington</option><option value="7" >Nanaimo</option><option value="22" >North Coast</option><option value="16" >North Okanagan</option><option value="14" >Okanagan-Similkameen</option><option value="23" >Peace River</option><option value="11" >Powell River</option><option value="5" >Squamish-Lillooet</option><option value="29" >Strathcona</option><option value="27" >Sunshine Coast</option><option value="12" >Thompson-Nicola</option></select>            </div>
+            
+            <div class="form_control-group">
+              <select id="jtype" name="jtype" class="form_control"><option value=" ">Select Jurisdiction Type...</option><option value="0" >City</option><option value="1" >District</option><option value="2" >Indian Government District</option><option value="8" >Island Municipality</option><option value="11" >Mountain Resort Municipality</option><option value="10" >Regional Municipality</option><option value="9" >Resort Municipality</option><option value="5" >Town</option><option value="6" >Township</option><option value="7" >Village</option></select>            </div>
+
+            <div class="form_control-group">
+                
+  <select name="population" class="bodyDrop">
+     <option value=" " selected>Select Population range...</option>
+	 <option value="0 and 999" >0-999</option>
+	 <option value="1000 and 2000" >1,000-1,999</option>
+	 <option value="2000 and 4000" >2,000-3,999</option>
+	 <option value="4000 and 10000" >4,000-9,999</option>
+	 <option value="10000 and 25000" >10,000-25,000</option>
+	 <option value="25000 and 75000" >25,000-75,000</option>
+	 <option value="75000 and 25000000" >75,000+</option>
+  </select>	  
+  
+              </div>
+            
+            <div class="form_control-group" align="right">
+				<input type="submit" value="Search">
+			</div>
+         </form>
+         
+         <div align="right"><a href="#" id="advancedsearch-hide" class="hideLink" onClick="showHide('advancedsearch');return false;">Hide Search</a></div>
+      </div>
+     
+
+               	<table border=0 cellpadding="0" cellspacing="0">
+ 	<tr>
+ 		<td><b>162 record(s); </h4><a name="sresults"></a></b></td>
+ 		<td align="right">
+
+  			<form method="POST" action="https://www.civicinfo.bc.ca/municipalities?pn=2">
+  				<select id="results_per_page_dropdown" name="ntd" onChange="submit();">	
+	  				<option value="10" >10</option> 
+	  				<option value="25" >25</option>
+	  				<option value="50" >50</option>
+	  				<option value="100" selected>100</option>
+	  				<!--<option value="1000" >Displaying ALL</option>-->	
+  				</select>
+  			</form>
+ 		</td>
+  		<td valign="center"><b>displayed.</b></td>
+  	</tr>
+</table>       		<div id="pagination_controls" style=" padding-bottom: 10px;"><a href="/municipalities?pn=1" class="btn btn-sm" title="Previous page" name="Previous page" style="margin:2px;"> &lt; Previous</a> <a href="/municipalities?pn=1" class="btn btn-sm" style="margin:2px;">1</a> <button class="btn-sm btn-muted" style="margin:2px;">2 </button>  </div>
+	            
+       <ol start="101"><li style="padding-bottom:10px;"><a href="municipalities?id=94"><b>Pitt Meadows  (City)</b></a><br>12007 Harris Road<br> Pitt Meadows, BC V3Y 2B5<br>Phone: 604-465-5454<br>E:&nbsp;<a href="mailto:info@pittmeadows.bc.ca">info@pittmeadows.bc.ca</a> W:&nbsp;<a href="http://www.pittmeadows.bc.ca">http://www.pittmeadows.bc.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Pitt Meadows,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=95"><b>Port Alberni  (City)</b></a><br>4850 Argyle Street<br> Port Alberni, BC V9Y 1V8<br>Phone: 250-723-2146<br>E:&nbsp;<a href="mailto:citypa@portalberni.ca">citypa@portalberni.ca</a> W:&nbsp;<a href="http://www.portalberni.ca">http://www.portalberni.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Port Alberni,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=96"><b>Port Alice  (Village)</b></a><br>1061 Marine Drive<br> Port Alice, BC V0N 2N0<br>Phone: 250-284-3391<br>E:&nbsp;<a href="mailto:info@portalice.ca">info@portalice.ca</a> W:&nbsp;<a href="http://www.portalice.ca">http://www.portalice.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Port Alice,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=97"><b>Port Clements  (Village)</b></a><br>36 Cedar Avenue West<br> Port Clements, BC V0T 1R0<br>Phone: 250-557-4295<br>E:&nbsp;<a href="mailto:cao@portclements.ca">cao@portclements.ca</a> W:&nbsp;<a href="http://www.portclements.ca">http://www.portclements.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Port Clements,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=98"><b>Port Coquitlam  (City)</b></a><br>2580 Shaughnessy Street<br> Port Coquitlam, BC V3C 2A8<br>Phone: 604-927-5411<br>E:&nbsp;<a href="mailto:info@portcoquitlam.ca">info@portcoquitlam.ca</a> W:&nbsp;<a href="http://www.portcoquitlam.ca">http://www.portcoquitlam.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Port Coquitlam,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=99"><b>Port Edward  (District)</b></a><br>770 Pacific Avenue<br> Port Edward, BC V0V 1G0<br>Phone: 250-628-3667<br>E:&nbsp;<a href="mailto:info@portedward.ca">info@portedward.ca</a> W:&nbsp;<a href="http://www.portedward.ca">http://www.portedward.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Port Edward,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=100"><b>Port Hardy  (District)</b></a><br>7360 Columbia Street<br> Port Hardy, BC V0N 2P0<br>Phone: 250-949-6665<br>E:&nbsp;<a href="mailto:general@porthardy.ca">general@porthardy.ca</a> W:&nbsp;<a href="http://www.porthardy.ca">http://www.porthardy.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Port Hardy,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=101"><b>Port McNeill  (Town)</b></a><br>1775 Furney Place<br> Port McNeill, BC V0N 2R0<br>Phone: 250-956-3111<br>E:&nbsp;<a href="mailto:reception@portmcneill.ca">reception@portmcneill.ca</a> W:&nbsp;<a href="http://www.portmcneill.ca">http://www.portmcneill.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Port McNeill,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=102"><b>Port Moody  (City)</b></a><br>100 Newport Drive<br> Port Moody, BC V3H 5C3<br>Phone: 604-469-4500<br>E:&nbsp;<a href="mailto:info@portmoody.ca">info@portmoody.ca</a> W:&nbsp;<a href="http://www.portmoody.ca">http://www.portmoody.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Port Moody,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=103"><b>Pouce Coupe  (Village)</b></a><br>5011 - 49 Avenue<br> Pouce Coupe, BC V0C 2C0<br>Phone: 250-786-5794<br>E:&nbsp;<a href="mailto:sstokes@poucecoupe.ca">sstokes@poucecoupe.ca</a> W:&nbsp;<a href="http://www.poucecoupe.ca">http://www.poucecoupe.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Pouce Coupe,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=104"><b>Powell River  (City)</b></a><br>6910 Duncan Street<br> Powell River, BC V8A 1V4<br>Phone: 604-485-6291<br>E:&nbsp;<a href="mailto:info@cdpr.bc.ca">info@cdpr.bc.ca</a> W:&nbsp;<a href="http://www.powellriver.ca/">http://www.powellriver.ca/</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Powell River,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=105"><b>Prince George  (City)</b></a><br>1100 Patricia Blvd<br> Prince George, BC V2L 3V9<br>Phone: 250-561-7600<br>E:&nbsp;<a href="mailto:cityclerk@princegeorge.ca">cityclerk@princegeorge.ca</a> W:&nbsp;<a href="http://www.princegeorge.ca">http://www.princegeorge.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Prince George,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=106"><b>Prince Rupert  (City)</b></a><br>424 West Third Avenue<br> Prince Rupert, BC V8J 1L7<br>Phone: 250-627-1781<br>E:&nbsp;<a href="mailto:cityhall@princerupert.ca">cityhall@princerupert.ca</a> W:&nbsp;<a href="http://www.princerupert.ca">http://www.princerupert.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Prince Rupert,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=107"><b>Princeton  (Town)</b></a><br>151 Vermilion Ave<br> Princeton, BC V0X 1W0<br>Phone: 250-295-3135<br>E:&nbsp;<a href="mailto:admin@princeton.ca">admin@princeton.ca</a> W:&nbsp;<a href="http://www.princeton.ca">http://www.princeton.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Princeton,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=108"><b>Qualicum Beach  (Town)</b></a><br>#201 - 660 Primrose Street<br> Qualicum Beach, BC V9K 1S7<br>Phone: 250-752-6921<br>E:&nbsp;<a href="mailto:qbtown@qualicumbeach.com">qbtown@qualicumbeach.com</a> W:&nbsp;<a href="http://www.qualicumbeach.com">http://www.qualicumbeach.com</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Qualicum Beach,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=184"><b>Queen Charlotte  (Village)</b></a><br>903 A Oceanview Drive<br> Queen Charlotte, BC V0T 1S0<br>Phone: 250-559-4765<br>E:&nbsp;<a href="mailto:office@queencharlotte.ca">office@queencharlotte.ca</a> W:&nbsp;<a href="http://www.queencharlotte.ca">http://www.queencharlotte.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Queen Charlotte,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=109"><b>Quesnel  (City)</b></a><br>410 Kinchant Street<br> Quesnel, BC V2J 7J5<br>Phone: 250-992-2111<br>E:&nbsp;<a href="mailto:cityhall@quesnel.ca">cityhall@quesnel.ca</a> W:&nbsp;<a href="http://www.quesnel.ca">http://www.quesnel.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Quesnel,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=110"><b>Radium Hot Springs  (Village)</b></a><br>4836 Radium Boulevard<br> Radium Hot Springs, BC V0A 1M0<br>Phone: 250-347-6455<br>E:&nbsp;<a href="mailto:mark.read@radiumhotsprings.ca">mark.read@radiumhotsprings.ca</a> W:&nbsp;<a href="http://www.radiumhotsprings.ca/">http://www.radiumhotsprings.ca/</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Radium Hot Springs,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=111"><b>Revelstoke  (City)</b></a><br>216 Mackenzie Avenue<br> Revelstoke, BC V0E 2S0<br>Phone: 250-837-2911<br>E:&nbsp;<a href="mailto:admin@revelstoke.ca">admin@revelstoke.ca</a> W:&nbsp;<a href="http://www.revelstoke.ca">http://www.revelstoke.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Revelstoke,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=112"><b>Richmond  (City)</b></a><br>6911 No. 3 Road<br> Richmond, BC V6Y 2C1<br>Phone: 604-276-4000<br>E:&nbsp;<a href="mailto:cityclerk@richmond.ca">cityclerk@richmond.ca</a> W:&nbsp;<a href="http://www.richmond.ca">http://www.richmond.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Richmond,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=113"><b>Rossland  (City)</b></a><br>1899 Columbia Avenue<br> Rossland, BC V0G 1Y0<br>Phone: 250-362-7396<br>E:&nbsp;<a href="mailto:cityhall@rossland.ca">cityhall@rossland.ca</a> W:&nbsp;<a href="http://www.rossland.ca">http://www.rossland.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Rossland,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=114"><b>Saanich  (District)</b></a><br>770 Vernon Avenue<br> Saanich, BC V8X 2W7<br>Phone: 250-475-1775<br>E:&nbsp;<a href="mailto:clerksec@saanich.ca">clerksec@saanich.ca</a> W:&nbsp;<a href="http://www.saanich.ca/">http://www.saanich.ca/</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Saanich,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=115"><b>Salmo  (Village)</b></a><br>423 Davies Avenue<br> Salmo, BC V0G 1Z0<br>Phone: 250-357-9433<br>E:&nbsp;<a href="mailto:cao@salmo.ca">cao@salmo.ca</a> W:&nbsp;<a href="http://www.salmo.ca">http://www.salmo.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Salmo,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=116"><b>Salmon Arm  (City)</b></a><br>500 - 2 Avenue NE<br> Salmon Arm, BC V1E 4N2<br>Phone: 250-803-4000<br>E:&nbsp;<a href="mailto:cityhall@salmonarm.ca">cityhall@salmonarm.ca</a> W:&nbsp;<a href="http://www.salmonarm.ca">http://www.salmonarm.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Salmon Arm,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=117"><b>Sayward  (Village)</b></a><br>652 H'Kusam Way<br> Sayward, BC V0P 1R0<br>Phone: 250-282-5512<br>E:&nbsp;<a href="mailto:village@saywardvalley.net">village@saywardvalley.net</a> W:&nbsp;<a href="http://www.sayward.ca">http://www.sayward.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Sayward,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=118"><b>Sechelt  (District)</b></a><br>5797 Cowrie Street, 2nd Floor<br> Sechelt, BC V0N 3A0<br>Phone: 604-885-1986<br>E:&nbsp;<a href="mailto:info@sechelt.ca">info@sechelt.ca</a> W:&nbsp;<a href="http://www.sechelt.ca">http://www.sechelt.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Sechelt,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=178"><b>Sechelt Indian Government District </b></a><br>5545 Sunshine Coast Highway<br> Sechelt, BC V0N 3A0<br>Phone: 604-740-5600<br>E:&nbsp;<a href="mailto:dhill@secheltnation.net">dhill@secheltnation.net</a> W:&nbsp;<a href="http://www.shishalh.com/sigd-sechelt-indian-government-district">http://www.shishalh.com/sigd-sechelt-indian-government-district</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Sechelt,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=119"><b>Sicamous  (District)</b></a><br>446 Main Street<br> Sicamous, BC V0E 2V0<br>Phone: 250-836-2477<br>E:&nbsp;<a href="mailto:info@sicamous.ca">info@sicamous.ca</a> W:&nbsp;<a href="http://www.sicamous.ca">http://www.sicamous.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Sicamous,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=120"><b>Sidney  (Town)</b></a><br>2440 Sidney Avenue<br> Sidney, BC V8L 1Y7<br>Phone: 250-656-1184<br>E:&nbsp;<a href="mailto:admin@sidney.ca">admin@sidney.ca</a> W:&nbsp;<a href="http://www.sidney.ca">http://www.sidney.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Sidney,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=121"><b>Silverton  (Village)</b></a><br>421 Lake Avenue<br> Silverton, BC V0G 2B0<br>Phone: 250-358-2472<br>E:&nbsp;<a href="mailto:admin@silverton.ca">admin@silverton.ca</a> W:&nbsp;<a href="http://www.silverton.ca">http://www.silverton.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Silverton,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=122"><b>Slocan  (Village)</b></a><br>503 Slocan Street<br> Slocan, BC V0G 2C0<br>Phone: 250-355-2277<br>E:&nbsp;<a href="mailto:info@villageofslocan.ca">info@villageofslocan.ca</a> W:&nbsp;<a href="http://www.slocancity.com/">http://www.slocancity.com/</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Slocan,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=123"><b>Smithers  (Town)</b></a><br>1027 Aldous Street<br> Smithers, BC V0J 2N0<br>Phone: 250-847-1600<br>E:&nbsp;<a href="mailto:general@smithers.ca">general@smithers.ca</a> W:&nbsp;<a href="http://www.smithers.ca">http://www.smithers.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Smithers,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=181"><b>Sooke  (District)</b></a><br>2205 Otter Point Road<br> Sooke, BC V9Z 1J2<br>Phone: 250-642-1634<br>E:&nbsp;<a href="mailto:info@sooke.ca">info@sooke.ca</a> W:&nbsp;<a href="http://www.sooke.ca">http://www.sooke.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Sooke,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=124"><b>Spallumcheen  (Township)</b></a><br>4144 Spallumcheen Way<br> Spallumcheen, BC V0E 1B6<br>Phone: 250-546-3013<br>E:&nbsp;<a href="mailto:mail@spallumcheentwp.bc.ca">mail@spallumcheentwp.bc.ca</a> W:&nbsp;<a href="http://www.spallumcheentwp.bc.ca">http://www.spallumcheentwp.bc.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Spallumcheen,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=125"><b>Sparwood  (District)</b></a><br>136 Spruce Avenue<br> Sparwood, BC V0B 2G0<br>Phone: 250-425-6271<br>E:&nbsp;<a href="mailto:sparwood@sparwood.ca">sparwood@sparwood.ca</a> W:&nbsp;<a href="http://www.Sparwood.ca">http://www.Sparwood.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Sparwood,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=126"><b>Squamish  (District)</b></a><br>37955 Second Avenue<br> Squamish, BC V8B 0A3<br>Phone: 604-892-5217<br>E:&nbsp;<a href="mailto:admdept@squamish.ca">admdept@squamish.ca</a> W:&nbsp;<a href="http://squamish.ca">http://squamish.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Squamish,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=127"><b>Stewart  (District)</b></a><br>705 Brightwell Street<br> Stewart, BC V0T 1W0<br>Phone: 250-636-2251<br>E:&nbsp;<a href="mailto:info@districtofstewart.com">info@districtofstewart.com</a> W:&nbsp;<a href="http://www.districtofstewart.com">http://www.districtofstewart.com</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Stewart,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=128"><b>Summerland  (District)</b></a><br>13211 Henry Avenue<br> Summerland, BC V0H 1Z0<br>Phone: 250-494-6451<br>E:&nbsp;<a href="mailto:info@summerland.ca">info@summerland.ca</a> W:&nbsp;<a href="http://www.summerland.ca">http://www.summerland.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Summerland,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=190"><b>Sun Peaks  (Mountain Resort Municipality)</b></a><br>106 - 3270 Village Way<br> Sun Peaks, BC V0E 5N0<br>Phone: 250-578-2020<br>E:&nbsp;<a href="mailto:admin@sunpeaksmunicipality.ca">admin@sunpeaksmunicipality.ca</a> W:&nbsp;<a href="http://sunpeaksmunicipality.ca/">http://sunpeaksmunicipality.ca/</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Sun Peaks,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=129"><b>Surrey  (City)</b></a><br>13450-104 Avenue<br> Surrey, BC V3T 1V8<br>Phone: 604-591-4011<br>E:&nbsp;<a href="mailto:clerks@surrey.ca">clerks@surrey.ca</a> W:&nbsp;<a href="http://www.surrey.ca">http://www.surrey.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Surrey,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=130"><b>Tahsis  (Village)</b></a><br>977 South Maquinna Drive<br> Tahsis, BC V0P 1X0<br>Phone: 250-934-6344<br>E:&nbsp;<a href="mailto:reception@villageoftahsis.com">reception@villageoftahsis.com</a> W:&nbsp;<a href="http://www.villageoftahsis.com">http://www.villageoftahsis.com</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Tahsis,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=131"><b>Taylor  (District)</b></a><br>10007 - 100A Street<br> Taylor, BC V0C 2K0<br>Phone: 250-789-3392<br>E:&nbsp;<a href="mailto:feedback@districtoftaylor.com">feedback@districtoftaylor.com</a> W:&nbsp;<a href="http://www.districtoftaylor.com">http://www.districtoftaylor.com</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Taylor,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=132"><b>Telkwa  (Village)</b></a><br>1415 Hankin Avenue<br> Telkwa, BC V0J 2X0<br>Phone: 250-846-5212<br>E:&nbsp;<a href="mailto:info@telkwa.ca">info@telkwa.ca</a> W:&nbsp;<a href="http://www.telkwa.com">http://www.telkwa.com</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Telkwa,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=133"><b>Terrace  (City)</b></a><br>3215 Eby Street<br> Terrace, BC V8G 2X8<br>Phone: 250-635-6311<br>E:&nbsp;<a href="mailto:cityhall@terrace.ca">cityhall@terrace.ca</a> W:&nbsp;<a href="http://www.terrace.ca/">http://www.terrace.ca/</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Terrace,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=134"><b>Tofino  (District)</b></a><br>121 - 3rd Street<br> Tofino, BC V0R 2Z0<br>Phone: 250-725-3229<br>E:&nbsp;<a href="mailto:office@tofino.ca">office@tofino.ca</a> W:&nbsp;<a href="http://www.tofino.ca">http://www.tofino.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Tofino,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=135"><b>Trail  (City)</b></a><br>1394 Pine Avenue<br> Trail, BC V1R 4E6<br>Phone: 250-364-1262<br>E:&nbsp;<a href="mailto:info@trail.ca">info@trail.ca</a> W:&nbsp;<a href="http://www.trail.ca">http://www.trail.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Trail,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=136"><b>Tumbler Ridge  (District)</b></a><br>305 Iles Way<br> Tumbler Ridge, BC V0C 2W0<br>Phone: 250-242-4242<br>E:&nbsp;<a href="mailto:cao@dtr.ca">cao@dtr.ca</a> W:&nbsp;<a href="http://www.districtoftumblerridge.ca">http://www.districtoftumblerridge.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Tumbler Ridge,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=137"><b>Ucluelet  (District)</b></a><br>200 Main Street<br> Ucluelet, BC V0R 3A0<br>Phone: 250-726-7744<br>E:&nbsp;<a href="mailto:info@ucluelet.ca">info@ucluelet.ca</a> W:&nbsp;<a href="http://www.ucluelet.ca">http://www.ucluelet.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Ucluelet,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=138"><b>Valemount  (Village)</b></a><br>735 Cranberry Lake Road<br> Valemount, BC V0E 2Z0<br>Phone: 250-566-4435<br>E:&nbsp;<a href="mailto:office@valemount.ca">office@valemount.ca</a> W:&nbsp;<a href="http://www.valemount.ca">http://www.valemount.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Valemount,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=139"><b>Vancouver  (City)</b></a><br>453 West 12th Avenue<br> Vancouver, BC V5Y 1V4<br>Phone: 604-873-7011<br>E:&nbsp;<a href="mailto:info@vancouver.ca">info@vancouver.ca</a> W:&nbsp;<a href="http://vancouver.ca/">http://vancouver.ca/</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Vancouver,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=140"><b>Vanderhoof  (District)</b></a><br>160 Connaught Street<br> Vanderhoof, BC V0J 3A0<br>Phone: 250-567-4711<br>E:&nbsp;<a href="mailto:info@district.vanderhoof.ca">info@district.vanderhoof.ca</a> W:&nbsp;<a href="http://www.vanderhoof.ca">http://www.vanderhoof.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Vanderhoof,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=141"><b>Vernon  (City)</b></a><br>3400 - 30th Street<br> Vernon, BC V1T 5E6<br>Phone: 250-545-1361<br>E:&nbsp;<a href="mailto:admin@vernon.ca">admin@vernon.ca</a> W:&nbsp;<a href="http://www.vernon.ca">http://www.vernon.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Vernon,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=142"><b>Victoria  (City)</b></a><br>1 Centennial Square<br> Victoria, BC V8W 1P6<br>Phone: 250-385-5711<br>E:&nbsp;<a href="mailto:publicservice@victoria.ca">publicservice@victoria.ca</a> W:&nbsp;<a href="http://www.victoria.ca">http://www.victoria.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Victoria,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=143"><b>View Royal  (Town)</b></a><br>45 View Royal Avenue<br> Victoria, BC V9B 1A6<br>Phone: 250-479-6800<br>E:&nbsp;<a href="mailto:info@viewroyal.ca">info@viewroyal.ca</a> W:&nbsp;<a href="http://www.viewroyal.ca">http://www.viewroyal.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Victoria,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=144"><b>Warfield  (Village)</b></a><br>555 Schofield Hwy<br> Trail, BC V1R 2G7<br>Phone: 250-368-8202<br>E:&nbsp;<a href="mailto:warfieldadmin@shawlink.ca">warfieldadmin@shawlink.ca</a> W:&nbsp;<a href="http://warfield.ca/">http://warfield.ca/</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Trail,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=179"><b>Wells  (District)</b></a><br>4243 Sanders Avenue<br> Wells, BC V0K 2R0<br>Phone: 250-994-3330<br>E:&nbsp;<a href="mailto:office@wells.ca">office@wells.ca</a> W:&nbsp;<a href="http://www.wells.ca">http://www.wells.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Wells,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=185"><b>West Kelowna  (City)</b></a><br>2760 Cameron Road<br> West Kelowna, BC V1Z 2T6<br>Phone: 778-797-1000<br>E:&nbsp;<a href="mailto:info@westkelownacity.ca">info@westkelownacity.ca</a> W:&nbsp;<a href="http://www.westkelownacity.ca">http://www.westkelownacity.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=West Kelowna,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=145"><b>West Vancouver  (District)</b></a><br>750 - 17th Street<br> West Vancouver, BC V7V 3T3<br>Phone: 604-925-7000<br>E:&nbsp;<a href="mailto:info@westvancouver.ca">info@westvancouver.ca</a> W:&nbsp;<a href="http://www.westvancouver.ca">http://www.westvancouver.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=West Vancouver,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=146"><b>Whistler  (Resort Municipality)</b></a><br>4325 Blackcomb Way<br> Whistler, BC V0N 1B4<br>Phone: 604-932-5535<br>E:&nbsp;<a href="mailto:info@whistler.ca">info@whistler.ca</a> W:&nbsp;<a href="http://www.whistler.ca">http://www.whistler.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Whistler,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=147"><b>White Rock  (City)</b></a><br>15322 Buena Vista Avenue<br> White Rock, BC V4B 1Y6<br>Phone: 604-541-2100<br>E:&nbsp;<a href="mailto:webmaster@whiterockcity.ca">webmaster@whiterockcity.ca</a> W:&nbsp;<a href="http://www.whiterockcity.ca">http://www.whiterockcity.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=White Rock,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=148"><b>Williams Lake  (City)</b></a><br>450 Mart Street<br> Williams Lake, BC V2G 1N3<br>Phone: 250-392-2311<br>E:&nbsp;<a href="mailto:cbouchard@williamslake.ca">cbouchard@williamslake.ca</a> W:&nbsp;<a href="http://www.williamslake.ca">http://www.williamslake.ca</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Williams Lake,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li><li style="padding-bottom:10px;"><a href="municipalities?id=149"><b>Zeballos  (Village)</b></a><br>157 Maquinna Avenue<br> Zeballos, BC V0P 2A0<br>Phone: 250-761-4229<br>E:&nbsp;<a href="mailto:adminzeb@recn.ca">adminzeb@recn.ca</a> W:&nbsp;<a href="http://www.zeballos.com/">http://www.zeballos.com/</a><br><img src="production/images/btn-sidelinkarrow.gif" width="11" height="10" />&nbsp;<a href="https://www.google.ca/maps?f=q&hl=en&geocode&time&date&ttype&q=Zeballos,+BC,+Canada&ie=UTF8&z=12&iwloc=addr&om=0" target="new">View Map</a></li></ol>
+        	   <div id="pagination_controls"><a href="/municipalities?pn=1" class="btn btn-sm" title="Previous page" name="Previous page" style="margin:2px;"> &lt; Previous</a> <a href="/municipalities?pn=1" class="btn btn-sm" style="margin:2px;">1</a> <button class="btn-sm btn-muted" style="margin:2px;">2 </button>  </div> 
+	        
+      <a href="#" class="back-to-top">Back to Top</a>
+        <script>            
+			jQuery(document).ready(function() {
+				var offset = 620;
+				var duration = 500;
+				jQuery(window).scroll(function() {
+					if (jQuery(this).scrollTop() > offset) {
+						jQuery('.back-to-top').fadeIn(duration);
+					} else {
+						jQuery('.back-to-top').fadeOut(duration);
+					}
+				});
+				
+				jQuery('.back-to-top').click(function(event) {
+					event.preventDefault();
+					jQuery('html, body').animate({scrollTop: 0}, duration);
+					return false;
+				})
+			});
+			
+					</script>
+    
+    
+
+      
+    </main>
+
+  </div> <!-- close #content_wrapper -->
+
+  <nav class="section_nav" id="section_nav">
+    <h2 class="section_nav-heading"><span class="section_nav-pre">Section Navigation: </span>News</h2>
+   
+     <ul class="section_nav-menu">
+	<li class="section_nav-parent"><a href="/municipalities"><span class="link selected">Municipalities</span></a></li>
+    
+    <li class="section_nav-parent"><a href="/regionaldistricts"><span class="link">Regional Districts &amp; Islands Trust</span></a></li>
+    
+    <li class="section_nav-parent"><a href="/firstnations"><span class="link">First Nations</span></a></li>
+    
+    <li class="section_nav-parent"><a href="/improvementdistricts"><span class="link">Improvement Districts</span></a></li>
+    
+   <!-- <li class="section_nav-parent"><a href="/schooldistricts"><span class="link">School Districts</span></a></li>-->
+    
+    <li class="section_nav-parent"><a href="/agencies"><span class="link">Agencies and Associations</span></a></li>
+    
+    <li class="section_nav-parent"><a href="/suppliers"><span class="link">Suppliers</span></a></li>
+		
+	<li class="section_nav-parent"><a href="/people"><span class="link">People</span></a></li>
+    
+	<li class="section_nav-parent"><a href="/lists-purchase"><span class="link">Purchase Lists (Non Commercial Use)</span></a></li>
+    <!--<li class="section_nav-parent"><a href="/electedofficials"><span class="link">Elected Officials and Staff</span></a></li>-->
+	  
+ 
+</ul>    
+  </nav> <!-- close #section_nav -->
+
+
+</div> <!-- close .row -->
+
+<div class="extra equal" id="extra">
+  
+  <!-- Find a Local Government Content -->
+<div class="feature_box feature_box-pointer col-sm-8 col-md-4"><div class="feature_box-inner">
+  <h2 class="feature_box-heading ">Find an Organization</h2>
+
+    <div class="feature_box-content">
+		<p><a href="/directories">Search for municipalities, regional districts, First Nations, and improvement districts.</a></p>  
+     <a href="/directories" class="read_more feature_box-read_more">More</a>
+    </div>
+</div></div> 
+<!-- close Find a Local Government.feature_box -->  
+  <!-- Find a Document Content -->
+  <div class="feature_box feature_box-newspaper col-sm-8 col-md-4"><div class="feature_box-inner">
+    <h2 class="feature_box-heading ">Find a Document</h2>
+    <div class="feature_box-content">
+      
+     <p><a href="/documents">Search local government websites and the CivicInfo BC archives.</a></p>
+      
+   	<a href="/documents" class="read_more feature_box-read_more">More</a>
+
+   </div>
+  </div></div> 
+<!-- close Find a Document.feature_box -->  
+  <!-- Find DataContent -->
+  <div class="feature_box feature_box-secondary feature_box-star col-sm-8 col-md-4"><div class="feature_box-inner">
+    <h2 class="feature_box-heading ">Find people</h2>
+    <div class="feature_box-content">
+      
+		<p><a href="/people">Search for local government elected officials and employees.</a></p>
+
+   		<a href="/people" class="read_more feature_box-read_more">More</a>
+
+    </div>
+  </div></div> 
+<!-- close Find Data.feature_box -->  
+  <div class="feature_box feature_box-secondary feature_box-check col-sm-8 col-md-4"><div class="feature_box-inner">
+  <h2 class="feature_box-heading ">Email Newsletter</h2>
+<form action="/newsletter" id="subscribe-form" method="get">
+  <div class="form_control-group">
+      <!--<label class="form_control-label" for="item3">
+          <span class="form_control-title">Enter Name:</span>
+      </label>-->
+      
+      <span class="form_control-note" id="item3-note">Enter email to subscribe:</span>
+      <input type="text" id="email" name="email" aria-describedby="item3-note" class="form_control" placeholder="email" required="required"><br>
+      
+      <input type="submit" class="btn-sm btn-muted" value="Subscribe">
+      
+  </div>
+   <a href="http://www.civicinfo.bc.ca/newsletter?action=unsubscribe" class="read_more feature_box-read_more">Unsubscribe</a>
+   </form>
+</div></div> <!-- close .feature_box -->
+</div> <!-- close #extra -->
+
+</div>
+
+</div> <!-- close #main_wrapper -->
+
+</div> <!-- close #top -->
+
+
+
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-8685443-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+<footer class="footer" id="footer"><div class="container">
+
+  <nav class="footer_nav" id="footer_nav" role="navigation">
+    <ul class="footer_nav-container">
+      <li class="footer_nav-item"><a href="http://www.civicinfo.bc.ca/terms">Terms of Use</a></li>
+      <li class="footer_nav-item"><a href="http://www.civicinfo.bc.ca/privacy">Privacy Policy</a></li>
+      <li class="footer_nav-item"><a href="http://www.civicinfo.bc.ca/disclaimer">Disclaimer</a></li>
+    </ul>
+  </nav><!-- close #footer_nav -->
+
+  <div class="footer_text" id="footer_text">
+    <p>Copyright @2017 <span class="entry">CivicInfo BC</span></p>
+  </div> <!-- close #footer_text -->
+
+
+  <div class="social_links follow_links" id="follow_links">
+    <h2 class="follow_links-heading">Follow Us</h2>
+    <ul class="follow_links-container">
+      <li class="follow_links-item"><a href="http://www.facebook.com/CivicInfoBC" class="facebook" target="_blank"><span class="follow_links-pre">Follow on </span>Facebook</a></li>
+      <li class="follow_links-item"><a href="https://twitter.com/civicinfo" class="twitter" target="_blank"><span class="follow_links-pre">Follow on </span>Twitter</a></li>
+    </ul>
+  </div> <!-- close #follow_links -->
+
+</div></footer>
+
+<!--[if gt IE 7]><!-->
+<!--<script src="production/js/jquery.min.js"></script>
+<script src="production/js/plugins.js"></script>
+<script src="production/js/scripts.js"></script>-->
+<!--<![endif]-->
+</body>
+</html>
+ 

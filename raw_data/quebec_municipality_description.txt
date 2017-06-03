@@ -1,0 +1,54 @@
+Le fichier contient plusieurs renseignements sur les organisations municipales (municipalités, municipalités régionales de comté, agglomérations, communautés métropolitaines et arrondissements), qu'elles soient actives ou dissoues. Si une certaine balise est absente pour une organisation, c'est que le champ est nul.
+
+COD_GEO_N : code géographique
+COD_GEO_A : code géographique (ancienne nomenclature à quatre chiffres)
+NO_FOURN : numéro de fournisseur (désuet)
+NO_SEQ_A : numéro de séquence (désuet)
+NOM_O_L1 : nom officiel (ligne 1)
+NOM_O_L2 : nom officiel (ligne 2)
+NOM_L_L1 : nom officiel avec la désignation (ligne 1)
+NOM_L_L2 : nom officiel avec la désignation (ligne 2)
+NOM_ABR : nom abrégé
+NOM_GENT : gentilé (nom des habitants)
+MRC_PREC : code géographique de la MRC précédente
+MODI_MRC : date de changement de MRC
+DESI_PREC : code de désignation précédente
+D_DESI_P : désignation précédente
+MODI_DESI : date du dernier changement de désignation
+ADR_PHY_L1 : adresse physique (ligne 1)
+ADR_PHY_L2 : adresse physique (ligne 2)
+ADR_POS_L1 : adresse postale (ligne 1)
+ADR_POS_L2 : adresse postale (ligne 2)
+COD_POST : code postal (format A9A9A9
+ADR_ELCTRN : adresse de courriel
+SIT_INTRNT : adresse du site Internet
+NO_TEL : numéro de téléphone (format 9999999999)
+NO_TLC : numéro de télécopieur (format 9999999999)
+LAN_CORS : code de langue de correspondance
+D_LAN_CORS : langue de correspondance
+COD_ACTI : code d'activité (0 actif, 9 inactif)
+D_COD_ACTI : activité
+TYP_ACTI : code du type d'activité
+D_TYP_ACTI : type d'activité
+CONST : date de constitution
+GOQ_CONST : référence de la constitution à la Gazette officielle du Québec
+DISSO : date de dissolution
+GOQ_DISSO : référence de la dissolution à la Gazette officielle du Québec
+CLAS_POP : code de classe de population
+D_CLAS_POP : classe de population
+SOLD_POP : population décrétée ou de référence
+STRC_TERR : superificie total km2)
+DERN_ELEC : date des dernières élections
+PROCH_ELEC : date des prochaines élections
+MOD_ELEC : code du mode électoral
+D_MOD_ELEC : mode électoral
+DIVIS_TERR : code de la division territoriale
+D_DIVIS_T : division territoriale
+CORP_POLC : code du corps de police
+D_CORP_P : corps de police
+VIRM_AUTO : code de virement automatique
+D_VIRM_A : virement automatique
+DESI : code de désignation
+NO_DIVIS : code de la division de recensement
+NO_REG : code de la région administrative
+BUR : code de la direction régionale du ministère des Affaires municipales et de l'Occupation du territoire
